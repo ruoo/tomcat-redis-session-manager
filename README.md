@@ -9,6 +9,7 @@ tomcat-redis-session-manager
 * 将编译后target/tomcat-redis-session-manager-1.0.zip/lib内一下jar拷贝的tomcat/lib下
 
 * tomcat/conf/server.xml配置
+
          <Valve className="com.whosenet.tomcat.redissessions.RedisSessionHandlerValve" />
          <Manager className="com.whosenet.tomcat.redissessions.RedisSessionManager"
              host="localhost" <!-- optional: defaults to "localhost" -->
