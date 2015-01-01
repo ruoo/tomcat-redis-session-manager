@@ -14,6 +14,7 @@ import org.apache.juli.logging.Log;
 import org.apache.juli.logging.LogFactory;
 
 public class JavaSerializer implements Serializer {
+
   private ClassLoader loader;
 
   private final Log log = LogFactory.getLog(JavaSerializer.class);
