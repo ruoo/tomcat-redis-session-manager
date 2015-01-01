@@ -11,7 +11,7 @@ tomcat-redis-session-manager
     - tomcat-redis-session-manager-1.0.jar
 
 
-* tomcat/conf/server.xml配置
+* 配置参数(tomcat7/conf/context.xml文件<Context>节点下增加如下内容)
 
          <Valve className="com.whosenet.tomcat.redissessions.RedisSessionHandlerValve" />
          <Manager className="com.whosenet.tomcat.redissessions.RedisSessionManager"
