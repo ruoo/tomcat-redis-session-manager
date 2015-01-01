@@ -10,6 +10,7 @@ tomcat-redis-session-manager
     - jedis-2.5.2.jar
     - tomcat-redis-session-manager-1.0.jar
 
+* redis-server自行配置启动
 
 * 配置参数(tomcat7/conf/context.xml文件<Context>节点下增加如下内容)
 
@@ -35,8 +36,9 @@ tomcat-redis-session-manager
         	/>
 
 * 项目使用
-     session.removeAttribute(key)
-     session.setAttribute(key, newAttributeValue)
+
+    - session.removeAttribute(key)
+    - session.setAttribute(key, newAttributeValue)
 
 ##修改内容
 * 项目构建由gradle改为Maven,适应部分用户项目需要
